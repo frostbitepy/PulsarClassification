@@ -4,12 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 
-""" 
-Este código te permite cargar un modelo entrenado y un normalizador guardado desde archivos pickle y realizar 
-predicciones en nuevos datos de entrada especificados en un archivo CSV. Puedes ejecutar este script desde la 
-terminal proporcionando las rutas a los archivos del modelo, el normalizador y los datos de entrada. Por ejemplo:
-python main.py --modelo modelo_entrenado.pkl --normalizador normalizador.pkl --entrada datos_entrada.csv
-"""
+
 # Función para cargar el modelo y el normalizador
 def cargar_modelo_y_normalizador(modelo_path, normalizador_path):
     with open(modelo_path, 'rb') as model_file:
